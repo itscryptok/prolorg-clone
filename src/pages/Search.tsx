@@ -19,14 +19,14 @@ export default function Search() {
     if (params.city) qs.set("city", params.city);
     if (params.country) qs.set("country", params.country);
     if (params.availability) qs.set("availability", params.availability);
-    setLocation(`/?${qs.toString()}`);
+    setLocation(`/feed?${qs.toString()}`);
   };
 
   return (
     <div className="min-h-screen bg-background p-6 md:p-12">
       <div className="w-full md:w-4/5 lg:w-3/5 mx-auto">
         <div className="flex items-center gap-4 mb-8">
-          <button onClick={() => setLocation("/")} className="p-2 bg-card rounded-full hover:bg-secondary transition-colors">
+          <button onClick={() => setLocation("/feed")} className="p-2 bg-card rounded-full hover:bg-secondary transition-colors">
             <ArrowLeft size={24} />
           </button>
           <h1 className="text-4xl font-bold flex items-center gap-3">

@@ -170,7 +170,7 @@ export default function HowItWorks() {
             Record Your Prologue
           </button>
           <button
-            onClick={() => setLocation("/")}
+            onClick={() => setLocation("/feed")}
             className="border border-border hover:bg-secondary px-6 py-3 rounded-full font-medium text-sm transition-colors"
           >
             Browse the Feed

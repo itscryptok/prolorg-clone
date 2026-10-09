@@ -1,8 +1,8 @@
 import { Link } from "wouter";
 
 const NAV_LINKS = [
-  { label: "Home", to: "/home" },
-  { label: "Feed", to: "/" },
+  { label: "Home", to: "/" },
+  { label: "Feed", to: "/feed" },
   { label: "Search", to: "/search" },
   { label: "Activity", to: "/activity" },
   { label: "Login", to: "/sign-in" },

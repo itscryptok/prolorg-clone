@@ -32,7 +32,7 @@ export default function Home() {
           <p className="text-[10px] text-muted-foreground leading-none mt-0.5 pl-11">The Talent stage app</p>
         </div>
         <nav className="flex items-center gap-2">
-          <button onClick={() => setLocation("/")} aria-label="Swipe feed" className="p-2 rounded-full hover:bg-secondary transition-colors hover:text-primary">
+          <button onClick={() => setLocation("/feed")} aria-label="Swipe feed" className="p-2 rounded-full hover:bg-secondary transition-colors hover:text-primary">
             <Play size={20} />
           </button>
           <button onClick={() => setLocation("/search")} aria-label="Advanced Search" className="p-2 rounded-full hover:bg-secondary transition-colors hover:text-primary">
@@ -85,7 +85,7 @@ export default function Home() {
         </p>
 
         <button
-          onClick={() => setLocation("/")}
+          onClick={() => setLocation("/feed")}
           className="bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-4 rounded-full text-lg font-bold transition-all hover:scale-105 mb-16"
         >
           Back to Feed
@@ -254,7 +254,7 @@ export default function Home() {
               <span className="flex items-center justify-center gap-2"><Rocket size={16} /> Record Your Prologue</span>
             </button>
             <button
-              onClick={() => { setMenuOpen(false); setLocation("/"); }}
+              onClick={() => { setMenuOpen(false); setLocation("/feed"); }}
               className="w-full border border-border hover:bg-secondary py-3 rounded-full font-medium text-sm transition-colors"
             >
               <span className="flex items-center justify-center gap-2"><Zap size={16} /> Browse the Feed</span>

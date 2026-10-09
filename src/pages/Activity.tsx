@@ -36,7 +36,7 @@ export default function Activity() {
       {/* ── Header ── */}
       <div className="sticky top-0 z-40 flex items-center gap-3 px-4 py-4 bg-background/95 backdrop-blur border-b border-border">
         <button
-          onClick={() => setLocation("/")}
+          onClick={() => setLocation("/feed")}
           className="p-2 rounded-full hover:bg-secondary transition-colors"
           aria-label="Back to feed"
         >
@@ -84,7 +84,7 @@ export default function Activity() {
                   <p className="font-semibold">Nothing saved yet</p>
                   <p className="text-sm text-muted-foreground">Hit the checkmark on a prologue in the feed to save it here.</p>
                   <button
-                    onClick={() => setLocation("/")}
+                    onClick={() => setLocation("/feed")}
                     className="mt-2 bg-primary text-primary-foreground text-sm font-bold px-5 py-2 rounded-full hover:bg-primary/90 transition-colors"
                   >
                     Go to Feed

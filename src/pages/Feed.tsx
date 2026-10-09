@@ -173,10 +173,10 @@ export default function Feed() {
     setIsSearching(false);
     setSearchQuery("");
     setDebouncedQuery("");
-    setLocation(`/?search=${encodeURIComponent(term)}`);
+    setLocation(`/feed?search=${encodeURIComponent(term)}`);
   };
 
-  const clearFilter = () => setLocation("/");
+  const clearFilter = () => setLocation("/feed");
 
   if (isLoading && !allData) {
     return <div className="min-h-screen bg-black text-white flex items-center justify-center">Loading stage...</div>;

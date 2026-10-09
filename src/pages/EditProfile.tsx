@@ -416,10 +416,10 @@ function EditProfileForm({ profile, userId }: { profile: PublicProfile; userId: 
         </button>
         <h1 className="text-lg font-bold">Edit Profile</h1>
         <div className="flex gap-2">
-          <button onClick={() => setLocation("/")} className="p-2 rounded-full hover:bg-secondary transition-colors" aria-label="Swipe feed">
+          <button onClick={() => setLocation("/feed")} className="p-2 rounded-full hover:bg-secondary transition-colors" aria-label="Swipe feed">
             <Play size={18} />
           </button>
-          <button onClick={() => setLocation("/home")} className="p-2 rounded-full hover:bg-secondary transition-colors" aria-label="Home">
+          <button onClick={() => setLocation("/")} className="p-2 rounded-full hover:bg-secondary transition-colors" aria-label="Home">
             <Home size={18} />
           </button>
         </div>

@@ -241,7 +241,8 @@ function Router() {
     <>
       {CLERK_ENABLED && <ClerkQueryClientCacheInvalidator />}
       <Switch>
-        <Route path="/" component={VideoFeed} />
+        <Route path="/" component={Home} />
+        <Route path="/feed" component={VideoFeed} />
         <Route path="/home" component={Home} />
         <Route path="/sign-in/*?" component={SignInRoute} />
         <Route path="/sign-up/*?" component={SignUpRoute} />

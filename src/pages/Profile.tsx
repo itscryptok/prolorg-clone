@@ -69,7 +69,7 @@ export default function Profile() {
 
         <div className="flex gap-2">
           <button
-            onClick={() => setLocation("/")}
+            onClick={() => setLocation("/feed")}
             className="p-2 rounded-full bg-black/40 backdrop-blur hover:bg-black/60 transition-colors"
             aria-label="Swipe feed"
           >

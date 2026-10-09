@@ -64,7 +64,7 @@ export default function ReportIssue() {
                 Thanks for letting us know. We'll look into it and get back to you at <span className="font-semibold text-foreground">{email}</span>.
               </p>
               <button
-                onClick={() => setLocation("/")}
+                onClick={() => setLocation("/feed")}
                 className="mt-4 bg-primary text-primary-foreground px-6 py-2.5 rounded-full font-semibold hover:bg-primary/90 transition-colors"
               >
                 Back to feed
