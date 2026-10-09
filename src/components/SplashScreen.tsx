@@ -29,7 +29,7 @@ export default function SplashScreen({ onDone }: { onDone: () => void }) {
         }
       `}</style>
       <div
-        className={`fixed inset-0 z-[9999] bg-background flex flex-col items-center justify-center gap-6 transition-opacity duration-500 ${fading ? "opacity-0" : "opacity-100"}`}
+        className={`fixed inset-0 z-[9999] bg-background flex flex-col items-center justify-center gap-6 transition-opacity duration-500 ${fading ? "opacity-0 pointer-events-none" : "opacity-100"}`}
       >
         <img src="/logo.png" alt="Prolorg logo" className="h-20 w-auto" />
         <div className="text-center">
