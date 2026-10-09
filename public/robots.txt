@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://prolorg-clone.onrender.com/sitemap.xml
